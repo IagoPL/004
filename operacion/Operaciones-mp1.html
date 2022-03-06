@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
+
+    <link rel="stylesheet" href="style-operacion.css">
+
+
+    <title>Formulario</title>
+</head>
+
+<body>
+
+
+    <div class="contenedor-formularios">
+
+
+        <div class="contenido-tab">
+
+            <div id="iniciar-sesion">
+                <h1>Formulario</h1>
+                <form>
+
+                    <!--input-->
+
+                    <div class="contenedor-input">
+
+                        <input type="number" class="form-control" id="primerNumeroBinario"
+                            placeholder="Introduce un número en binario" name="primerNumeroBinario" required
+                            pattern="[0-1]">
+                    </div>
+
+                    <div class="contenedor-input">
+                        <input type="number" class="form-control" id="segundoNumeroBinario"
+                            placeholder="Introduce un número en binario" name="segundoNumeroBinario" required
+                            pattern="[0-1]">
+                    </div>
+
+
+                    <!--output-->
+                    <div class="contenedor-input">
+                        <p id="salida"> </p>
+                    </div>
+
+                    <!--botones-->
+
+
+
+                    <input type="button" class="button button-block btn-primary" value="Bit de paridad"
+                        onclick="calcularBitParidad()"></input>
+
+                    <br>
+
+                    <input type="button" class="button button-block btn-primary" value="Calcular bit paridadd"
+                        onclick="calcularComplementoAUno()"></input>
+
+                    <br>
+                    <input type="button" class="button button-block btn-primary" value="Calcular bit paridad"
+                        onclick="resultadoAND()"></input>
+
+                    <br><br>
+                    <ul class="contenedor-tabs">
+                        <a href="../index.html">Inicio</a>
+
+
+                </form>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
